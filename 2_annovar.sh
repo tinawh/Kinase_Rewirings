@@ -1,0 +1,2 @@
+# annovar
+perl /.mounts/labs/reimandlab/private/users/thuang/annovar_test_cbw/annovar/table_annovar.pl /.mounts/labs/reimandlab/private/users/thuang/data_2/01-08-18/annovar_input.avinput --outfile /.mounts/labs/reimandlab/private/users/thuang/data_2/01-08-18/final_output.txt /.mounts/labs/reimandlab/private/users/thuang/annovar_test_cbw/annovar/humandb/ -buildver hg19 -remove -otherinfo -protocol refGene -operation g -nastring .
