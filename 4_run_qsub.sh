@@ -1,0 +1,1 @@
+qsub -cwd -V -b y -l h_vmem=10G -pe smp 10- -N job -m beas "module load R;Rscript /.mounts/labs/reimandlab/private/users/thuang/bin_2/3_match_longest_refseqs.R"
