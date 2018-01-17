@@ -1,0 +1,14 @@
+Welcome to java/1.6.0_21
+Picked up _JAVA_OPTIONS: -Xmx20G -Xss10M
+Number of background permutations: 100
+Running Original Test...
+Number of Seeds: 354
+Finished Running Original Test.
+Finished Analyzing Original Network
+Number of Available Processors: 32
+Computing Background from 100 Random Networks
+..................................................................................................................................................................................................................................................................................................................................................................
+Finished Running on All Cores
+Finished Moving
+Finished Adjusting
+Time to run: 11646.178595847 seconds

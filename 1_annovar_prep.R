@@ -10,6 +10,7 @@ maf.file <- fread("/.mounts/labs/reimandlab/private/users/thuang/data_2/read-onl
 
 # file names 
 annovar.input.file <- "/.mounts/labs/reimandlab/private/users/thuang/data_2/01-08-18/annovar_input.avinput"
+filtered.patients.file <- "/.mounts/labs/reimandlab/private/users/thuang/data_2/read-only/filtered_patients.rds" 
 
 FilterMafMutations <- function(maf.file) {
 	# filter out everything over 9000 mutations and "PASS" mutations
@@ -23,6 +24,9 @@ FilterMafMutations <- function(maf.file) {
 							filter(count <= 9000) %>%
 							select(Patient) %>% 
 							unique()
+
+	# saved for 6_hypermodules_prep							
+	saveRDS(filtered.patients, filtered.patients.file)
 
 	temp <- maf.file %>%
 					mutate(Patient = substr(Tumor_Sample_Barcode, 1, 12)) %>%
@@ -44,5 +48,5 @@ FilterMafMutations <- function(maf.file) {
 }
 
 ###########################################################################################################################################
-annovar_input <- FilterMafMutations(maf.file)
-write.table(annovar_input, file = annovar.input.file, sep = "\t", quote = F, col.names = F, row.names = F) 
+annovar.input <- FilterMafMutations(maf.file)
+write.table(annovar.input, file = annovar.input.file, sep = "\t", quote = F, col.names = F, row.names = F) 
