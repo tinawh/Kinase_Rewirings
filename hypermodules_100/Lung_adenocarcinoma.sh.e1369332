@@ -1,0 +1,122 @@
+Welcome to java/1.6.0_21
+Picked up _JAVA_OPTIONS: -Xmx20G -Xss10M
+Number of background permutations: 100
+Running Original Test...
+Number of Seeds: 595
+Finished Running Original Test.
+Finished Analyzing Original Network
+Number of Available Processors: 32
+Computing Background from 100 Random Networks
+................................................................................................................................................................................................................java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOf(Arrays.java:2882)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:100)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:390)
+	at java.lang.StringBuilder.append(StringBuilder.java:119)
+	at hypermodulesrun.HypermodulesHeuristicAlgorithm.mineHublets(HypermodulesHeuristicAlgorithm.java:401)
+	at hypermodulesrun.ShuffleTestCall.testSeed(ShuffleTestCall.java:86)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:67)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:15)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOf(Arrays.java:2882)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:100)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:390)
+	at java.lang.StringBuilder.append(StringBuilder.java:119)
+	at hypermodulesrun.HypermodulesHeuristicAlgorithm.mineHublets(HypermodulesHeuristicAlgorithm.java:401)
+	at hypermodulesrun.ShuffleTestCall.testSeed(ShuffleTestCall.java:86)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:67)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:15)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.lang.String.substring(String.java:1939)
+	at java.lang.String.subSequence(String.java:1972)
+	at java.util.regex.Pattern.split(Pattern.java:1019)
+	at java.lang.String.split(String.java:2292)
+	at java.lang.String.split(String.java:2334)
+	at hypermodulesrun.HypermodulesHeuristicAlgorithm.testModuleClinical(HypermodulesHeuristicAlgorithm.java:678)
+	at hypermodulesrun.HypermodulesHeuristicAlgorithm.mineHublets(HypermodulesHeuristicAlgorithm.java:407)
+	at hypermodulesrun.ShuffleTestCall.testSeed(ShuffleTestCall.java:86)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:67)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:15)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.ArrayDeque.doubleCapacity(ArrayDeque.java:128)
+	at java.util.ArrayDeque.addLast(ArrayDeque.java:218)
+	at java.util.ArrayDeque.add(ArrayDeque.java:381)
+	at hypermodulesrun.HypermodulesHeuristicAlgorithm.testModuleClinical(HypermodulesHeuristicAlgorithm.java:707)
+	at hypermodulesrun.HypermodulesHeuristicAlgorithm.mineHublets(HypermodulesHeuristicAlgorithm.java:407)
+	at hypermodulesrun.ShuffleTestCall.testSeed(ShuffleTestCall.java:86)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:67)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:15)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+...................................................................................................................................................................................................................................................................................................................................................................................................
+Finished Running on All Cores
+Finished Moving
+Finished Adjusting
+Time to run: 359698.430501386 seconds

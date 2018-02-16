@@ -1,5 +1,4 @@
 # mutation data prep for MIMP analysis
-
 require(data.table); require(tidyr); require(dplyr); require(reshape2)
 
 loc <- "/.mounts/labs/reimandlab/private/users/thuang/data_2/01-08-18/"
