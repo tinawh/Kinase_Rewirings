@@ -3,3 +3,27 @@ Picked up _JAVA_OPTIONS: -Xmx70G -Xss10M
 Number of background permutations: 100
 Running Original Test...
 Number of Seeds: 8219
+Finished Running Original Test.
+Finished Analyzing Original Network
+Number of Available Processors: 32
+Computing Background from 100 Random Networks
+.........................................................................................java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+	at hypermodulesrun.AlgorithmTask.run(AlgorithmTask.java:192)
+	at hypermodulesrun.MainRun.main(MainRun.java:162)
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.HashMap.addEntry(HashMap.java:753)
+	at java.util.HashMap.put(HashMap.java:385)
+	at java.util.HashSet.add(HashSet.java:200)
+	at hypermodulesrun.HypermodulesHeuristicAlgorithm.testModuleClinical(HypermodulesHeuristicAlgorithm.java:681)
+	at hypermodulesrun.HypermodulesHeuristicAlgorithm.mineHublets(HypermodulesHeuristicAlgorithm.java:407)
+	at hypermodulesrun.ShuffleTestCall.testSeed(ShuffleTestCall.java:86)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:67)
+	at hypermodulesrun.ShuffleTestCall.call(ShuffleTestCall.java:15)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+........................................

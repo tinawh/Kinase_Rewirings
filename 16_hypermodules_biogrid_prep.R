@@ -134,6 +134,7 @@ filtered.results <- GetMutationDataByCancerType(clinical.data, longest.refseqs, 
 saveRDS(filtered.results, unsplit.muts.file)
 WriteMutationDataByCancerType(filtered.results, mut.folder)
 
-filtered.clin <- GetClinicalDataByCancerType(clinical.data, filtered.results) 
+filtered.clin <- GetClinicalDataByCancerType(clinical.data, filtered.results)
+saveRDS(filtered.clin, unsplit.clinical.file)
 WriteClinicalDataByCancerType(filtered.clin, clinical.folder)
 
