@@ -3,3 +3,8 @@ Picked up _JAVA_OPTIONS: -Xmx70G -Xss10M
 Number of background permutations: 20
 Running Original Test...
 Number of Seeds: 6738
+Finished Running Original Test.
+Finished Analyzing Original Network
+Number of Available Processors: 1
+Computing Background from 20 Random Networks
+.............................................................................................................................................
